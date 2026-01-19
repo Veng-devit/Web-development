@@ -1,0 +1,59 @@
+body {
+  font-size: 30px;
+  font-family: calibri;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 20px;
+}
+
+.right,
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.nav {
+  margin-right: 20px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+}
+
+nav a:hover {
+  background-color: rgb(187, 128, 255);
+  border-radius: 10px;
+  padding: 0 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/edit.css">
+</head>
+<body>
+    <div class="header">
+        <div class="right">
+            <a href="../index.html"><img src="../../image/logo.png" alt="" class="logo"></a>
+            <div class="name">Quiz App</div>
+        </div>
+        <nav class="nav">
+            <a href="../play/play.html">Play Quiz</a>
+            <a href="edit.html">Edit Quiz</a>
+        </nav>
+    </div>
+    <div class="container">
+        <button id="addBtn" class="btn">Add Question</button>
+        <div id="questionList" class="question-list"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Question</h2>
+            <input type="text" id="questionInput" placeholder="Question title">
+            <input type="text" id="answerA" placeholder="Answer A">
+            <input type="text" id="answerB" placeholder="Answer B">
+            <input type="text" id="answerC" placeholder="Answer C">
+            <input type="text" id="answerD" placeholder="Answer D">
+            <select id="correctAnswer">
+                <option value="">Select correct answer</option>
+                <option value="A">Answer A</option>
+                <option value="B">Answer B</option>
+                <option value="C">Answer C</option>
+                <option value="D">Answer D</option>
+            </select>
+            <div class="modal-actions">
+                <button id="cancelBtn" class="btn cancel">Cancel</button>
+                <button id="saveBtn" class="btn">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+</body>
+
+</html>
