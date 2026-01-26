@@ -1,0 +1,17 @@
+{
+  "name": "start-code",
+  "version": "1.0.0",
+  "description": "for ex1 ex2 ex2",
+  "main": "ex1-trasnform-array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "node ex1-trasnform-array.js",
+    "start2": "node ex2-array-duplication.js",
+    "start3": "node ex3-shopping-card.js"
+  },
+  "keywords": [
+    "\\"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "lap2.9",
+  "version": "1.0.0",
+  "description": "for exercise 9 wee o2",
+  "main": "art.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node art.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "figlet": "^1.9.4"
+  }
+}

@@ -1,13 +1,17 @@
-let questions = [];
+let questions = JSON.parse(localStorage.getItem("questions")) || [];
 let editIndex = null;
 
 const modal = document.getElementById("modal");
 const addBtn = document.getElementById("addBtn");
 const saveBtn = document.getElementById("saveBtn");
 const cancelBtn = document.getElementById("cancelBtn");
-
 const questionList = document.getElementById("questionList");
-
+const questionInput = document.getElementById("questionInput");
+const answerA = document.getElementById("answerA");
+const answerB = document.getElementById("answerB");
+const answerC = document.getElementById("answerC");
+const answerD = document.getElementById("answerD");
+const correctAnswer = document.getElementById("correctAnswer");
 addBtn.onclick = () => {
     openModal();
 };
@@ -57,7 +61,7 @@ function saveQuestion() {
     } else {
         questions[editIndex] = questionData;
     }
-
+    localStorage.setItem("questions", JSON.stringify(questions));
     renderQuestions();
     closeModal();
 }
@@ -70,13 +74,11 @@ function renderQuestions() {
         div.className = "question-item";
 
         div.innerHTML = `
-      <span>${q.title}</span>
-      <div class="actions">
-        <button onclick="editQuestion(${index})">✏️</button>
-        <button onclick="deleteQuestion(${index})">🗑️</button>
-      </div>`
-            ;
-
+            <span>${q.title}</span>
+            <div class="actions">
+                <button onclick="editQuestion(${index})">✏️</button>
+                <button onclick="deleteQuestion(${index})">🗑️</button>
+            </div>`;
         questionList.appendChild(div);
     });
 }

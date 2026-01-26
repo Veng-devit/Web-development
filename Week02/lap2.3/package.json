@@ -1,0 +1,13 @@
+{
+  "name": "lap2.3",
+  "version": "1.0.0",
+  "description": "for exercis3 week02",
+  "main": "profile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node profile.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

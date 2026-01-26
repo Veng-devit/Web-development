@@ -1,0 +1,12 @@
+{
+  "name": "lap2.5",
+  "version": "1.0.0",
+  "description": "for exercise 5 week 02",
+  "main": "writer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node writer.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

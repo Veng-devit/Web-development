@@ -11,7 +11,7 @@ const dom_start = document.querySelector("#start");
 dom_start.addEventListener("click", onStart);
 
 // DATA  ---------------------------------------------------------
-let questions = [
+let defaultuQestions = [
   {
     title: "What does HTML stand for?",
     choiceA: "Hi Thierry More Laught",
@@ -37,6 +37,10 @@ let questions = [
     correct: "C",
   },
 ];
+if (!localStorage.getItem("questions")) {
+  localStorage.setItem("questions", JSON.stringify(defaultQuestions));
+}
+let questions = JSON.parse(localStorage.getItem("questions"));
 let runningQuestionIndex = 0;
 let score = 0;
 
@@ -95,6 +99,8 @@ function renderSCore() {
   let scoreSize = questions.length;
   let scorePerc = (score * 100) / scoreSize;
   // choose the image based on the scorePerCent
+  localStorage.setItem("lastScore", score);
+  localStorage.setItem("lastScorePercent", scorePerc.toFixed(0));
   let emoji='';
   if (scorePerc < 20) {
     emoji ='😭';

@@ -1,0 +1,12 @@
+{
+  "name": "lap2.6",
+  "version": "1.0.0",
+  "description": "for exercise 6 week 02",
+  "main": "paths.js",
+  "start": "node paths.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

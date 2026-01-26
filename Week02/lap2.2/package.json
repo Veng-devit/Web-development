@@ -1,0 +1,12 @@
+{
+  "name": "lap2.2",
+  "version": "1.0.0",
+  "description": "for exercise 2 week02",
+  "main": "app.js",
+  "scripts": {
+    "test": "code run",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

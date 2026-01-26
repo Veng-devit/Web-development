@@ -1,0 +1,13 @@
+{
+  "name": "lap2.1",
+  "version": "1.0.0",
+  "description": "for exercise 1 weeek 02",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
